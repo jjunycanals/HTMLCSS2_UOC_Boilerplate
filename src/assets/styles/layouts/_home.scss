@@ -24,6 +24,21 @@ body {
   background-color: #fff;
   box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
     0 2px 4px -1px rgba(0, 0, 0, 0.06);
+
+  .botons {
+    background-color: $uoc-masterbrand;
+    padding: 2%;
+    width: 80%;
+    margin: auto;
+    border-radius: 15px;
+    border-style: solid;
+    border-color: gray;
+    box-shadow: 0 1px 6px 1px gray;
+    transition: .2s;
+  }
+  .botons:hover {
+    transform: scale(1.1);
+  }
 }
 
 .uoc-logo {
