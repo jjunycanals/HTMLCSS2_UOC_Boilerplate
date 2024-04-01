@@ -16,19 +16,17 @@ body {
 }
 
 .uoc-container {
-  max-width: 800px;
+  max-width: 70%;
   padding: 2rem;
-  margin: auto;
+  margin: 2% auto;
   text-align: center;
-
   background-color: #fff;
   border-radius: 2rem;
   box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
     0 2px 4px -1px rgba(0, 0, 0, 0.06);
 
   .botons {
-    width: 80%;
-    padding: 2%;
+    width: 60%;
     margin: auto;
     background-color: $uoc-masterbrand;
     border-color: gray;
@@ -70,4 +68,11 @@ body {
   margin-top: 1.5rem;
   font-size: 0.75rem;
   text-align: center;
+}
+
+.uoc-spa {
+  width: 80%;
+  margin: 10% auto;
+  border-top: 2px solid #ccc;
+  border-top-color: $uoc-corporate;
 }

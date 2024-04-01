@@ -6,27 +6,35 @@
     <meta name="viewport" content="width=device-width">
     <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss"><!-- do not remove this line! -->
     <title>UOC Boilerplate</title>
+    <include src=""></include>
   </head>
   <body>
-    <div class="uoc-container">
-      <picture>
-        <source srcset="./assets/images/logo.png?as=webp&width=350" type="image/webp" />
-        <img src="./assets/images/logo.png?width=350" alt="Universitat Oberta de Catalunya" class="uoc-logo" />
-      </picture>
-      <h1 class="uoc-title"><i class="fas fa-university"> Hello, UOC!</i></h1>
-      <p>
-        This is a starter template for the Advanced HTML and CSS Tools courses
-        from the Master's Program in Multimedia Applications and the Master's
-        Program in Web App and Website Development at the Universitat Oberta de
-        Catalunya.
-      </p>
-      <div class="botons">
-        <a href=""  class="display-block button size-sm">
-            <i class="fa-solid fa-thumbtack"> Get More with UOC</i>
-          </a>
-      </div>
+    <include src="./views/nav.html"></include>
 
-    </div>
+    <main>
+        <div class="uoc-container">
+            <picture>
+              <source srcset="./assets/images/logo.png?as=webp&width=350" type="image/webp" />
+              <img src="./assets/images/logo.png?width=350" alt="Universitat Oberta de Catalunya" class="uoc-logo" />
+            </picture>
+            <h1 class="uoc-title"><i class="fas fa-university"> Hello, UOC!</i></h1>
+
+            <div class="botons">
+              <a href=""  class="display-block button size-sm">
+                  <i class="fa-solid fa-thumbtack"> Get More with UOC</i>
+                </a>
+            </div>
+            <div class="uoc-spa"></div>
+            <h1 class="uoc-title"><i class="fa-solid fa-location-arrow"></i> Sites in New York</h1>
+            <section class="sites-list">
+                <div class="content" id="grid-sites">
+                   <script type="module" src="./assets/scripts/sites.js"></script>
+                </div>
+            </section>
+        </div>
+
+    </main>
+
     <include src="./views/footer.html"></include>
     <script type="module" src="./assets/scripts/main.js"></script><!-- do not remove this line! -->
   </body>
