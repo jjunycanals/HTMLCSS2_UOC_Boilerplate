@@ -27,6 +27,7 @@ body {
 
   .botons {
     width: 60%;
+    padding: 1%;
     margin: auto;
     background-color: $uoc-masterbrand;
     border-color: gray;
@@ -72,7 +73,7 @@ body {
 
 .uoc-spa {
   width: 80%;
-  margin: 10% auto;
+  margin: 5% auto;
   border-top: 2px solid #ccc;
   border-top-color: $uoc-corporate;
 }

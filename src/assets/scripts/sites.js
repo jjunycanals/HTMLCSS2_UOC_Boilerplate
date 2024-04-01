@@ -10,20 +10,20 @@ function printSites() {
             content.innerHTML += `
                 <article class="sites">
                     <div class="sites-header">
-                        <span class="button">${element.categoria}</span>
+                        <div class="sit"><span class="but">${element.discount} %</span></div>
                         <div class="sites-img">
                         <img style="width: 300px"
                             loading="lazy"
-                            src="./images/${element.detall.multimedia}"
+                            src="./assets/images/${element.detall.multimedia}"
                             alt="${element.titol}"
-                            sizes ="(max-width: 400px) ../images/${element.detall.sizemultimedia[0]} 400vw,
-                                    (max-width: 600px) ../images/${element.detall.sizemultimedia[1]} 600vw,
-                                    (max-width: 800px) ../images/${element.detall.sizemultimedia[0]} 800vw
+                            sizes ="(max-width: 400px) ./assets/images/${element.detall.sizemultimedia[0]} 400vw,
+                                    (max-width: 600px) ./assets/images/${element.detall.sizemultimedia[1]} 600vw,
+                                    (max-width: 800px) ./assets/images/${element.detall.sizemultimedia[0]} 800vw
                                     "
                             srcset ="
-                                ../images/${element.detall.sizemultimedia[0]} 400w,
-                                ../images/${element.detall.sizemultimedia[1]} 600w,
-                                ../images/${element.detall.sizemultimedia[0]} 800w
+                                ./assets/images/${element.detall.sizemultimedia[0]} 400w,
+                                ./assets/images/${element.detall.sizemultimedia[1]} 600w,
+                                ./assets/images/${element.detall.sizemultimedia[0]} 800w
                                 "
                         >
                         </div>
