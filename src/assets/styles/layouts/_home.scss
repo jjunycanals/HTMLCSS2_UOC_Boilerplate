@@ -18,7 +18,7 @@ body {
 .uoc-container {
   max-width: 70%;
   padding: 2rem;
-  margin: 2% auto;
+  margin: 1% auto;
   text-align: center;
   background-color: #fff;
   border-radius: 2rem;
@@ -40,7 +40,12 @@ body {
     transform: scale(1.1);
   }
 }
-
+@media (max-width: 850px) {
+  .uoc-container img {
+    width: 80%;
+    height: auto;
+  }
+}
 .uoc-logo {
   display: block;
   max-width: 200px;
@@ -58,6 +63,7 @@ body {
   font-family: $font-family-serif;
   font-size: 24px;
   font-weight: 700;
+  line-height: 1.4;
   color: $uoc-corporate;
 
   @media (min-width: $mqMinWidth) {
@@ -66,9 +72,13 @@ body {
 }
 
 .uoc-footer {
+  padding: 3%;
   margin-top: 1.5rem;
   font-size: 0.75rem;
   text-align: center;
+  color: white;
+  background-color: black;
+
 }
 
 .uoc-spa {

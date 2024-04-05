@@ -5,12 +5,10 @@
 
 // import 'some-node-module';
 // import SomeModule from 'some-node-module';
-
+import {router} from '../router/index.routes';
 /**
  * Write any other JavaScript below
  */
-
-+( function() {
-  const university = "UOC";
-  console.log(`Hello, ${university}!`);
-} )();
+window.addEventListener('hashchange', () => {
+  router(window.location.hash)
+})

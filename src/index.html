@@ -6,31 +6,30 @@
     <meta name="viewport" content="width=device-width">
     <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss"><!-- do not remove this line! -->
     <title>UOC Boilerplate</title>
-    <include src=""></include>
+
   </head>
   <body>
     <include src="./views/nav.html"></include>
 
     <main>
         <div class="uoc-container">
-            <picture>
-              <source srcset="./assets/images/logo.png?as=webp&width=350" type="image/webp" />
-              <img src="./assets/images/logo.png?width=350" alt="Universitat Oberta de Catalunya" class="uoc-logo" />
-            </picture>
-            <h1 class="uoc-title"><i class="fas fa-university"> Hello, UOC!</i></h1>
-
+            <img src="./assets/images/timessquare.webp" alt="EmpireState">
+            <h1 class="uoc-title"><i class="fas fa-university"> Hello, New York!</i></h1>
+            <p class="uoc-title">Benvinguts a la ciutat que mai dorm, el cor de la Gran Poma, la metròpoli que
+              captura l'esperit de la diversitat, l'energia i la innovació: Nova York.</p><br>
             <div class="botons">
-              <a href=""  class="display-block button size-sm">
-                  <i class="fa-solid fa-thumbtack"> Get More with UOC</i>
-                </a>
+              <a href="#sites-list"  class="display-block button size-sm">
+                <i class="fa-solid fa-thumbtack"> Buscar llocs a NY</i>
+              </a>
             </div>
             <div class="uoc-spa"></div>
             <h1 class="uoc-title"><i class="fa-solid fa-location-arrow"></i> Sites in New York</h1>
-            <section class="sites-list">
+            <section class="sites-list" id="sites-list">
                 <div class="content" id="grid-sites">
                    <script type="module" src="./assets/scripts/sites.js"></script>
                 </div>
             </section>
+            <section id="root"></section>
         </div>
 
     </main>
