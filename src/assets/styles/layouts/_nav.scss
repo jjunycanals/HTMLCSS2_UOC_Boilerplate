@@ -1,11 +1,41 @@
 /* PERSONALITZACIONS NAV */
 .nav{
-  width: 100%;
   position: sticky;
-  margin: 0;
-  padding: 0;
   top: 0;
+  width: 100%;
+  padding: 0;
+  margin: 0;
   overflow: hidden;
+  .nav ul {
+    position: sticky;
+    top: 0;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    list-style-type: none;
+    background-color: var(--secondary-color);
+  }
+  .nav li {
+    float: left;
+  }
+  .nav li a {
+    display: block;
+    padding: 14px 16px;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+  }
+  .nav ul li:first-child{
+    padding-left: 3%;
+  }
+  /*  Per canviar el color del link quan passem per sobre */
+  .nav li a:hover {
+    background-color: var(--primary-color);
+  }
+  /* Per saber on som de la pagina i quedi en el nav reflexat*/
+  .nav .active a {
+    background-color: var(--active-color);
+  }
 }
 .title-header {
   width: 100%;
@@ -16,36 +46,7 @@
   color: var(--secondary-color);
   text-decoration: none;
 }
-.nav ul {
-  position: sticky;
-  top: 0;
-  padding: 0;
-  margin: 0;
-  overflow: hidden;
-  list-style-type: none;
-  background-color: var(--secondary-color);
-}
-.nav li {
-  float: left;
-}
-.nav li a {
-  display: block;
-  padding: 14px 16px;
-  color: white;
-  text-align: center;
-  text-decoration: none;
-}
-.nav ul li:first-child{
-  padding-left: 3%;
-}
-/*  Per canviar el color del link quan passem per sobre */
-.nav li a:hover {
-  background-color: var(--primary-color);
-}
-/* Per saber on som de la pagina i quedi en el nav reflexat*/
-.nav .active a {
-  background-color: var(--active-color);
-}
+
 
 /* Add logo in NAV */
 .logo {
